@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine Webseite</title>
+    <link rel="stylesheet" href="desktop.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="algemein.css" />
+    <script src="speicher.js"></script>
+    <script src="tags.js"></script>
+  </head>
+  <body>
+    <!--------------------------
+        Header
+    ----------------------------->
+    <header id="header">
+      <div class="headerLogo"><img src="icons/logo.jpg" alt="Logo" /></div>
+      <div class="headerLink">
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="audios.html">Audios</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="products.html">Produkte</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="impress.html">Impressum</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!--------------------------
+        Main
+    ----------------------------->
+    <main id="main">
+      <button onclick="window.history.back()" id="buttonLeft">
+        <img src="icons/pfeil.png" />
+      </button>
+      <button onclick="window.history.forward()" id="buttonRight">
+        <img src="icons/pfeil.png" />
+      </button>
+    </main>
+
+    <!--------------------------
+        Footer
+    ----------------------------->
+    <footer id="footer">
+      <hr />
+      <div class="social-img">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="icons/facebook.png" alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="icons/insta.png" alt="Instagramm"
+        /></a>
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><img src="icons/linkedin.png" alt="LinkedIn"
+        /></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><img src="icons/twitter.png" alt="Twitter"
+        /></a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img src="icons/youtube.png" alt="YouTube"
+        /></a>
+      </div>
+      <!--------------------------
+           Map
+        ----------------------------->
+      <div class="karte">
+        <img src="icons/karte.png" usemap="#image-map" />
+
+        <map name="image-map">
+          <area
+            target="_blank"
+            alt="Schleswig-Holstein"
+            title="Schleswig-Holstein"
+            href="https://www.schleswig-holstein.de/DE/landesportal/landesportal_node.html"
+            coords="89,39,14"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Mecklenburg-Vorpommern"
+            title="Mecklenburg-Vorpommern"
+            href="https://www.mecklenburg-vorpommern.de/startseite/"
+            coords="148,51,18"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Bremen"
+            title="Bremen"
+            href="https://www.bremen.de/"
+            coords="66,76,7"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Hamburg"
+            title="Hamburg"
+            href="https://www.hamburg-tourism.de/"
+            coords="91,59,6"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Niedersachsen"
+            title="Niedersachsen"
+            href="https://www.niedersachsen.de/startseite/"
+            coords="89,95,22"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Berlin"
+            title="Berlin"
+            href="https://www.berlin.de/"
+            coords="163,95,7"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Brandenburg"
+            title="Brandenburg"
+            href="https://www.brandenburg.de/de/portal/bb1.c.473964.de"
+            coords="173,116,16"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Sachsen-Anhalt"
+            title="Sachsen-Anhalt"
+            href="https://www.sachsen-anhalt.de/startseite"
+            coords="127,117,19"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Sachsen"
+            title="Sachsen"
+            href="https://www.sachsen.de/"
+            coords="161,147,16"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Nordrhein-Westfalen"
+            title="Nordrhein-Westfalen"
+            href="https://www.land.nrw/"
+            coords="35,129,26"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Hessen"
+            title="Hessen"
+            href="https://hessen.de/"
+            coords="67,162,19"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Thüringen"
+            title="Thüringen"
+            href="https://thueringen.de/"
+            coords="109,151,18"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Bayern"
+            title="Bayern"
+            href="https://www.bayern.de/"
+            coords="128,224,35"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Baden-Württemberg"
+            title="Baden-Württemberg"
+            href="https://www.baden-wuerttemberg.de/de/startseite/"
+            coords="65,234,26"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Rheinland-Pfalz"
+            title="Rheinland-Pfalz"
+            href="https://www.rlp.de/"
+            coords="30,179,17"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt="Saarland"
+            title="Saarland"
+            href="https://www.saarland.de/DE/home/home_node.html"
+            coords="18,203,9"
+            shape="circle"
+          />
+        </map>
+      </div>
+      <div id="navigator"></div>
+      <hr />
+      <div class="copy">Copyrigth &copy; by Daniel Ottinger</div>
+    </footer>
+  </body>
+</html>
+<script>
+  const main = document.getElementById("main");
+  const navi = document.getElementById("navigator");
+
+  // HTML Elemente
+  main.innerHTML +=
+    // input Vorname
+    single("input", [
+      {
+        name: "type",
+        wert: "text",
+      },
+      {
+        name: "placeholder",
+        wert: "Name",
+      },
+      {
+        name: "id",
+        wert: "inpVN",
+      },
+    ]) +
+    single("br") +
+    // input Nachname
+    single("input", [
+      {
+        name: "type",
+        wert: "text",
+      },
+      {
+        name: "placeholder",
+        wert: "Nachname",
+      },
+      {
+        name: "id",
+        wert: "inpNN",
+      },
+    ]) +
+    single("br") +
+    // input Telefon
+    single("input", [
+      {
+        name: "type",
+        wert: "tel",
+      },
+      {
+        name: "placeholder",
+        wert: "Telefon",
+      },
+      {
+        name: "id",
+        wert: "inpTEL",
+      },
+    ]) +
+    single("br") +
+    // input Email
+    single("input", [
+      {
+        name: "type",
+        wert: "email",
+      },
+      {
+        name: "placeholder",
+        wert: "E-mail",
+      },
+      {
+        name: "id",
+        wert: "inpMAIL",
+      },
+    ]) +
+    single("br") +
+    // Textarea Nachricht
+    block("textarea", "", [
+      {
+        name: "placeholder",
+        wert: "Bemerkung",
+      },
+      {
+        name: "id",
+        wert: "inpTA",
+      },
+    ]) +
+    single("br") +
+    // Button Senden
+    block("button", "Senden", [
+      {
+        name: "onclick",
+        wert: "sendeKontakt()",
+      },
+      {
+        name: "class",
+        wert: "buttonStyle",
+      },
+    ]) +
+    // Div für die Ausgabe
+    block("div", "", [
+      {
+        name: "id",
+        wert: "kontakteAnzeigen",
+      },
+    ]);
+  //***//
+  auslesen();
+
+  // footer Navigator
+  navi.innerHTML += `<p>Browser Codename: ${navigator.appCodeName} </p>
+  <p>Browser Name: ${navigator.appName} </p>
+  <p>Sprache: ${navigator.language} </p>
+  <p>Online Status: ${navigator.onLine} </p>
+  <p>HArdware Plattform: ${navigator.platform} </p>
+  <p>Arbeitsspeicher: ${navigator.deviceMemory}Gb </p>
+  `;
+</script>

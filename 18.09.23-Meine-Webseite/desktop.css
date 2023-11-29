@@ -1,0 +1,136 @@
+/**************************
+* Style für Große Displays
+***************************/
+@media screen and (min-width: 601px) {
+
+    /**************************
+    * Body
+    ***************************/
+    body {
+        background-color: rgb(187, 214, 160);
+        animation: change 2s ease 0s 1 normal forwards;
+    }
+
+    /******************
+     * Body Keyframe
+     ******************/
+    @keyframes change {
+        0% {
+            opacity: 0;
+            transform: translateX(-250px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /**************************
+    * Header
+    ***************************/
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 100%;
+        line-height: 140%;
+        background-color: rgb(96, 190, 93);
+        padding: 10px;
+        border-radius: 15px;
+        border: inset 2px greenyellow;
+    }
+
+    /**************************
+    * Header Logo
+    ***************************/
+    header .headerLogo {
+        width: 100%;
+    }
+
+    /**************************
+    * Header Links
+    ***************************/
+    header .headerLink ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+
+    /*************************
+       * Main Keyframe Animation
+      *  *************************/
+    #animation {
+        animation: textAni 2s ease 0s 1 normal forwards,
+            myAnim 2s ease 2s 1 normal forwards;
+        text-align: center;
+        color: darkblue;
+    }
+
+    @keyframes textAni {
+        0% {
+            transform: scale(0);
+            transform-origin: 0% 50%;
+        }
+
+        80% {
+            transform: scale(1.5);
+            transform-origin: 0% 100%;
+            color: greenyellow;
+        }
+
+        100% {}
+    }
+
+    @keyframes myAnim {
+
+        0%,
+        50%,
+        100% {
+            opacity: 1;
+        }
+
+        25%,
+        75% {
+            opacity: 0;
+            color: yellowgreen;
+        }
+    }
+
+    /**************************
+    * Footer
+    ***************************/
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 100%;
+        line-height: 140%;
+    }
+
+    /******************
+   * Social Media
+   ******************/
+    footer .social-img {
+        margin: 5px 50px;
+    }
+
+    footer .social-img img {
+        width: 30px;
+    }
+
+    /**************************
+    * Footer Hr
+    ***************************/
+    footer hr {
+        width: 100%;
+    }
+
+    /**************************
+    * Footer Cpyright
+    ***************************/
+    footer .copy {
+        width: 100%;
+        font-size: 10px;
+    }
+}

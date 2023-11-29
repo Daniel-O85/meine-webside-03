@@ -1,0 +1,171 @@
+/**************************
+* Style für kleine Displays
+***************************/
+@media screen and (max-width: 600px) {
+
+    /**************************
+    * Body
+    ***************************/
+    body {
+        background-color: rgb(215, 236, 194);
+        animation: flip 1s ease 0s 1 normal forwards;
+    }
+
+    @keyframes flip {
+        0% {
+            transform: perspective(400px) rotateY(0);
+            animation-timing-function: ease-out;
+        }
+
+        40% {
+            transform: perspective(400px) translateZ(150px) rotateY(170deg);
+            animation-timing-function: ease-out;
+        }
+
+        50% {
+            transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+            animation-timing-function: ease-in;
+        }
+
+        80% {
+            transform: perspective(400px) rotateY(360deg) scale(.95);
+            animation-timing-function: ease-in;
+        }
+
+        100% {
+            transform: perspective(400px) scale(1);
+            animation-timing-function: ease-in;
+        }
+    }
+
+    /**************************
+    * Header
+    ***************************/
+    header {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-size: 160%;
+        line-height: 200%;
+        background-color: rgb(147, 204, 139);
+        border-radius: 15px;
+
+    }
+
+    /**************************
+    * Header Logo
+    ***************************/
+    header .headerLogo {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        text-align: center;
+        background-color: rgb(82, 126, 76);
+        padding-top: 15px;
+        border-radius: 15px;
+        border: inset 2px greenyellow;
+    }
+
+    /**************************
+    * Header Links
+    ***************************/
+    header .headerLink {
+        list-style-type: none;
+        text-align: center;
+        grid-column-end: span 2;
+    }
+
+    /**************************
+    * Header Links Ul
+    ***************************/
+    header .headerLink ul {
+        list-style-type: none;
+    }
+
+
+    /*************************
+     * Main Keyframe Animation
+    **************************/
+    #animation {
+        animation: textAni 2s ease 1s 1 normal forwards, myAnim 2s ease 1s 1 normal forwards;
+        text-align: center;
+        color: darkblue;
+
+    }
+
+    @keyframes textAni {
+        0% {
+            transform: scale3d(1, 1, 1);
+        }
+
+        30% {
+            transform: scale3d(1.25, 0.75, 1);
+        }
+
+        40% {
+            transform: scale3d(0.75, 1.25, 1);
+        }
+
+        50% {
+            transform: scale3d(1.15, 0.85, 1);
+        }
+
+        65% {
+            transform: scale3d(0.95, 1.05, 1);
+        }
+
+        75% {
+            transform: scale3d(1.05, 0.95, 1);
+        }
+
+        100% {
+            transform: scale3d(1, 1, 1);
+        }
+    }
+
+    @keyframes myAnim {
+
+        0%,
+        50%,
+        100% {
+            opacity: 1;
+
+        }
+
+        25%,
+        75% {
+            opacity: 0;
+            color: yellowgreen;
+        }
+    }
+
+
+    /**************************
+    * Footer
+    ***************************/
+    footer {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        font-size: 160%;
+        line-height: 200%;
+
+    }
+
+    /**************************
+    * Footer Hr
+    ***************************/
+    footer hr {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        width: 120%;
+
+    }
+
+    /**************************
+    * Footer Cpyright
+    ***************************/
+    footer .copy {
+        grid-column-end: span 2;
+        font-size: 10px
+    }
+}
+
+;
